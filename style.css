@@ -6,14 +6,12 @@
 #movieAdd{
     float:left;
     width: 35%;
-    height:400px;
-    background-color: black;
+    background-color: darkgreen;
 }
 #movieShow{
     float:left;
     width: 65%;
-    height:400px;
-    background-color: red;
+    background-color: beige;
 }
 
 /*var colDiv = $('<div>').addClass('column');        */
