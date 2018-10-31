@@ -4,11 +4,12 @@
   {name: "hasdaooasd", st: "12", state: "upcoming"},
   {name: "hasdaooasd", st: "12", state: "upcoming"},
 ];
-localStorage.setItem('moviecart',JSON.stringify(moviecart)); //temporary
+
 
   var moviecart = localStorage.getItem('moviecart') ? JSON.parse(localStorage.getItem('moviecart')):{
   items: []
 };
+localStorage.setItem('moviecart',JSON.stringify(moviecart)); //temporary
 
 
 $(document).ready(function(){
@@ -40,7 +41,10 @@ $(document).ready(function(){
     });
     
     $("#addMovieButton").click(function(){
-    console.log($("#movieTextBox").val());
+        obj = {name: "hasdaooasd", st: "12", state: "upcoming"};
+        obj.name = $("#movieTextBox").val();
+        moviecart.push(obj);
+        localStorage.setItem('moviecart',JSON.stringify(moviecart));
   });
   
 

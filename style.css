@@ -15,3 +15,25 @@
     height:400px;
     background-color: red;
 }
+
+/*var colDiv = $('<div>').addClass('column');        */
+/*      var screenTimesDiv = $('<div>').addClass('mvST');*/
+/*      var nameDiv = $('<div>').addClass('mvName');*/
+/*      var buttonDiv = $('<div>').addClass('mvBtn');*/
+
+#column{
+    float:left;
+    width: 100%;
+}
+#mvST{
+    float:left;
+    width: 30%;
+}
+#mvName{
+    float:left;
+    width: 40%;
+}
+#mvBtn{
+    float:left;
+    width: 30%;
+}
