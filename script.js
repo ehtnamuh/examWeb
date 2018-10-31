@@ -28,6 +28,7 @@ $(document).ready(function(){
       
       changeStatebtn.click(function(event){
         moviecart[event.target.id].state = "Show Next" ;
+        moviecart[event.target.id].st += 1 ;
         var idd = "#" + event.target.id;
         $(idd).css("background-color", "red");
         localStorage.setItem('moviecart',JSON.stringify(cart));
@@ -41,10 +42,11 @@ $(document).ready(function(){
     });
     
     $("#addMovieButton").click(function(){
-        obj = {name: "hasdaooasd", st: "12", state: "upcoming"};
+        obj = {name: "hasdaooasd", st: "0", state: "upcoming"};
         obj.name = $("#movieTextBox").val();
         moviecart.push(obj);
         localStorage.setItem('moviecart',JSON.stringify(moviecart));
+        this.text("");
   });
   
 
