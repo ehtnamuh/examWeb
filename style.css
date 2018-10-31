@@ -1,0 +1,17 @@
+/*<div class = "wrapper">*/
+/*        <div id = "movieShow"></div>*/
+/*        <div id= "movieAdd"></div>*/
+/*    </div>*/
+.wrapper{}
+#movieAdd{
+    float:left;
+    width: 35%;
+    height:400px;
+    background-color: black;
+}
+#movieShow{
+    float:left;
+    width: 65%;
+    height:400px;
+    background-color: red;
+}
