@@ -102,14 +102,14 @@ $(document).ready(function() {
       }
       localStorage.setItem('moviecart', JSON.stringify(moviecart));
     });
-    // colDiv.css("float","left");
-    // colDiv.css("width, 100%");
-    // screenTimesDiv.css("float","left");
-    // screenTimesDiv.css("width, 30%");
-    // nameDiv.css("float","left");
-    // nameDiv.css("width, 40%");
-    // buttonDiv.css("float","left");
-    // buttonDiv.css("width, 30%");
+    colDiv.css("float","left");
+    colDiv.css("width", "100%");
+    screenTimesDiv.css("float","left");
+    screenTimesDiv.css("width", "30%");
+    nameDiv.css("float","left");
+    nameDiv.css("width", "40%");
+    buttonDiv.css("float","left");
+    buttonDiv.css("width", "30%");
     
     colDiv.append(screenTimesDiv);
     colDiv.append(nameDiv);
